@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="header">
+        Sudoku Solver
+    </h1>
+
+    <div id="my-sudoku">
+        <!-- Generate the board here -->
+    </div>
+
+    <button id="solve-btn" onclick="solveBoard();">Solve</button>
+    <button id="generate-btn" onclick="generateBoard();">Generate Board</button>
+
+    <div id="filter">
+        <div id="filter-level">
+            <span class="level-bar">-- Sort By Difficulty --</span>
+            <div id="filter-level-options">
+                <div class="level-easy level" onclick="chooseLevel('Easy')">Easy</div>
+                <div class="level-medium level" onclick="chooseLevel('Medium')">Medium</div>
+                <div class="level-hard level" onclick="chooseLevel('Hard')">Hard</div>
+            </div>
+        </div>
+    
+        <div id="filter-speed">
+            <span class="speed-bar">-- Sort By Speed --</span>
+            <div id="filter-speed-options">
+                <div class="speed-slow speed" onclick="chooseSpeed('Slow')">Slow</div>
+                <div class="speed-medium speed" onclick="chooseSpeed('Medium')">Medium</div>
+                <div class="speed-fast speed" onclick="chooseSpeed('Fast')">Fast</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="author-info">
+        Developed and maintained by Khoa Doan <span style="color: red; font-size: 25px;">&hearts;</span>
+    </div>
+
+    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="./main.js">
+    </script>
+</body>
+</html>
