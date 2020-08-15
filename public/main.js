@@ -6,7 +6,6 @@ const mySudoku = document.getElementById('my-sudoku');
 eel.expose(generateBox);
 function generateBox(val, y = 0, x = 0) {
     // Create a square and add the box class to it
-    console.log("It works !");
     const boxDiv = document.createElement("div");
     boxDiv.classList.add("box");
 
@@ -37,7 +36,8 @@ function generateBoard() {
 
 function solveBoard() {
     // mySudoku.innerHTML = '';
-    eel.solve(speed)
+    disableGenerateButton();
+    eel.solve(speed);
     // eel.print_board_to_web()
 }
 
@@ -67,7 +67,7 @@ function updateSquareValue(y, x, val) {
 }
 
 // Set the default board
-setDefaultBoard()
+// setDefaultBoard()
 
 
 function chooseLevel(levelInp) {
@@ -80,4 +80,16 @@ function chooseSpeed(speedInp) {
     const speedBar = document.getElementsByClassName("speed-bar")[0];
     speedBar.innerText = speedInp;
     speed = speedInp;
+}
+
+eel.expose(disableGenerateButton);
+function disableGenerateButton() {
+    const generateBtn = document.getElementById("generate-btn");
+    generateBtn.disabled = true;
+}
+
+eel.expose(enableGenerateButton);
+function enableGenerateButton() {
+    const generateBtn = document.getElementById("generate-btn");
+    generateBtn.disabled = false;
 }

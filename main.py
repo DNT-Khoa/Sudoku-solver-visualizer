@@ -6,15 +6,15 @@ import random
 eel.init('public')
 
 bd = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [9, 0, 2, 0, 0, 0, 3, 0, 8],
+    [0, 8, 5, 6, 0, 0, 0, 2, 0],
+    [3, 0, 0, 0, 0, 0, 0, 6, 0],
+    [0, 0, 6, 5, 1, 7, 0, 0, 0],
+    [2, 1, 0, 0, 3, 0, 7, 0, 5],
+    [7, 5, 0, 8, 0, 4, 1, 0, 6],
+    [0, 0, 1, 0, 6, 2, 0, 8, 4],
+    [0, 0, 7, 4, 5, 0, 0, 0, 0],
+    [6, 4, 0, 3, 0, 1, 0, 0, 7]
 ]
 
 speedInfo = {
@@ -22,6 +22,7 @@ speedInfo = {
     "Medium": 0.1,
     "Fast": 0
 }
+
 
 @eel.expose
 def generateNewBoard(level):
@@ -121,6 +122,7 @@ def valid(board, num, pos):
 def solve(speed, board=bd):
     find = find_empty(board)
     if not find:
+        eel.enableGenerateButton()
         return True
 
 
@@ -149,6 +151,9 @@ def print_board_to_web():
             eel.generateBox(bd[i][j], i, j)
 
 
+print_board_to_web()
 
-eel.start('index.html')
+
+
+eel.start('index.html', port=2000)
 
