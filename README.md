@@ -33,8 +33,18 @@ Because the application is using a local host on port 2000 on your computer so d
 I also included a Windows executable file to help you test it out. Feel free to download and try it yourself. Cheers !
 
 ## Screenshots
-![Sudoku1](https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku1.PNG)
-![Sudoku2](https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku2.PNG)
+<p align="center">
+  <img src="https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/ezgif.com-video-to-gif.gif" width="500" title="sudoku-gif">
+</p>
+
+<p align="center">
+  <img src="https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku1.PNG" width="500" title="sudoku-1">
+</p>
+
+<p align="center">
+  <img src="https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku2.PNG" width="500" title="sudoku-2">
+</p>
+
 
 ## Status: 
 Completed
