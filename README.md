@@ -33,12 +33,11 @@ Because the application is using a local host on port 2000 on your computer so d
 I also included a Windows executable file to help you test it out. Feel free to download and try it yourself. Cheers !
 
 ## Screenshots
-![Sudoku1](https://github.com/DNT-Khoa/Advanced-Project-for-Housing-Agency/blob/master/images/Login%20Page%20Housemate.PNG)
+![Sudoku1](https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku1.PNG)
+![Sudoku2](https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku2.PNG)
 
 ## Status: 
 Completed
 
 ## Contributors:
-- Georgie Nikolov
 - Khoa Doan
-- Daniel Vaswani
