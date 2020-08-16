@@ -5,6 +5,7 @@ Simple application to visualize the mechanism of backtracking algorithm in solvi
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Mechanism](#mechanism)
+* [Download](#download)
 * [Screenshots](#screenshots)
 * [Status](#status)
 * [Contributors](#contributors)
@@ -32,6 +33,8 @@ Because the application is using a local host on port 2000 on your computer so d
 
 I also included a Windows executable file to help you test it out. Feel free to download and try it yourself. Cheers !
 
+## Download
+You can download the app as a Windows executable file [**here**](https://github.com/DNT-Khoa/Sudoku-solver-visualizer/raw/master/dist/main.exe) !
 ## Screenshots
 <p align="center">
   <img src="https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/ezgif.com-video-to-gif.gif" width="500" title="sudoku-gif">
