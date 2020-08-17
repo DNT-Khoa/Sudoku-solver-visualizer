@@ -1,5 +1,9 @@
 # Sudoku Solver Visualizer
+<p align="center">
+  <img src="https://github.com/DNT-Khoa/Sudoku-solver-visualizer/blob/master/public/img/sudoku-gif-1.gif" width="450" title="sudoku-gif-1">
+</p>
 Simple application to visualize the mechanism of backtracking algorithm in solving Sudoku puzzles
+
 
 ## Table of contents
 * [General info](#general-info)
